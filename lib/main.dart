@@ -19,12 +19,20 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: Text("Cashy"),
-          backgroundColor: Colors.red,
+          backgroundColor: Colors.green,
           actions: [
-            IconButton(icon: Icon(Icons.mail), onPressed: (){})
+            IconButton(
+              icon: Icon(Icons.mail),
+              onPressed: () {},
+              color: Colors.white,
+            )
           ],
         ),
-        body: SafeArea(child: Text("Flutter pertama")),
+        body: SafeArea(
+            child: Image(
+              image: AssetImage('assets/images/cashy.jpeg'),
+              width: 200,
+            )),
       ),
     );
   }
