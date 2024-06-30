@@ -30,6 +30,8 @@ class MyApp extends StatelessWidget {
         ),
         body: SafeArea(
             child: Container(
+              margin: EdgeInsets.only(left: 35),
+              padding: EdgeInsets.only(top: 50),
               child: Column(
                 children: const [
                   Image(
