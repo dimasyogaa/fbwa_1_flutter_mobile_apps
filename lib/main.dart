@@ -29,9 +29,17 @@ class MyApp extends StatelessWidget {
           ],
         ),
         body: SafeArea(
-            child: Image(
-              image: AssetImage('assets/images/cashy.jpeg'),
-              width: 200,
+            child: Container(
+              child: Column(
+                children: const [
+                  Image(
+                    image: AssetImage('assets/images/cashy.jpeg'),
+                    width: 200,
+                  ),
+                  Text("Rich Together"),
+                  Text("Save your money little bit and we will help to be rich.")
+                ],
+              ),
             )),
       ),
     );
